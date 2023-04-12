@@ -10,6 +10,8 @@ Repo to house LtSpice models used in Tark Audio designs.
 
 3) Add the sym and sub folders to the search path as shown in the following image:
 
+<center>
 <img src="./assets/pathSetup.png" width="400">
+</center>
 
 4) Click "OK".
