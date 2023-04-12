@@ -1,0 +1,29 @@
+Version 4
+SymbolType CELL
+LINE Normal -32 1 -32 161
+LINE Normal 96 80 -32 1
+LINE Normal -32 161 96 80
+LINE Normal -80 1 -32 1
+LINE Normal -80 161 -80 1
+LINE Normal -32 161 -80 161
+LINE Normal -32 161 -80 1
+LINE Normal -80 161 -32 1
+WINDOW 0 83 -7 Left 2
+WINDOW 3 75 138 Left 2
+SYMATTR Value V2164s
+SYMATTR Prefix X
+SYMATTR Value2 V2164s
+SYMATTR Description V2164 Quad OTA - Single Supply
+SYMATTR SpiceModel v2164s.sub
+PIN -80 80 NONE 8
+PINATTR PinName IN
+PINATTR SpiceOrder 1
+PIN 96 80 NONE 8
+PINATTR PinName OUT
+PINATTR SpiceOrder 2
+PIN -64 0 NONE 8
+PINATTR PinName CV
+PINATTR SpiceOrder 3
+PIN -48 160 NONE 8
+PINATTR PinName VBIAS
+PINATTR SpiceOrder 4

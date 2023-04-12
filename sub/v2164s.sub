@@ -1,0 +1,18 @@
+* V2164 VCA cell
+* note: this subcircuit was found in a post from pichenettes on the MI forum,
+* it was modified to operate from a single supply by changing the ground references
+* to a VBIAS port
+.SUBCKT V2164S IN OUT CV VBIAS
+* The two transistors in the input's differential pair have the same base
+* current, hence the same Vbe. The second transistor is referenced to
+* ground so IN is virtually grounded.
+V1 IN VBIAS 0
+* Models 5k impedance for the CV input
+R2 CV VBIAS 5k
+* Stability network
+R3 IN 1 560
+C1 1 0 560p
+* Current gain expression
+*G1 OUT 0 VALUE={-I(V1)*PWR(10, -(V(CV)-V(VBIAS)) * 1.5)}
+G1 OUT 0 VALUE={-I(V1)*PWR( 10, -(V(CV)-V(VBIAS)) / ( 33m * (1+0.0033*ABS(temp-25))) * 0.05 )}
+.ENDS
