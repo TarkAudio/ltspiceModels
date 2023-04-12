@@ -15,3 +15,12 @@ Repo to house LtSpice models used in Tark Audio designs.
 </p>
 
 4) Click "OK".
+<br />
+<br />
+
+# Usage
+When adding a part, select the desired path in the "Top Directory"
+
+<p align="center">
+<img src="./assets/usage.png" width="400">
+</p>
